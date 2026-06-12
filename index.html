@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dia dos Namorados</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="container">
+    <header class="hero">
+      <h1>Feliz Dia dos Namorados</h1>
+      <p>Um site cheio de amor, ideias especiais e joguinhos românticos para vocês curtirem juntos.</p>
+      <button id="surpresaBtn">Mostrar surpresa</button>
+    </header>
+
+    <section class="cards" id="atividades">
+      <article class="card">
+        <h2>1. Cartinha surpresa</h2>
+        <p>Escreva uma mensagem secreta e esconda em um lugar especial. Depois peça para ela encontrar.</p>
+      </article>
+
+      <article class="card">
+        <h2>2. Lista de elogios</h2>
+        <p>Faça uma lista com 10 coisas que você mais ama nela e leia juntas em voz alta.</p>
+      </article>
+
+      <article class="card">
+        <h2>3. Joguinho dos desejos</h2>
+        <p>Escolha perguntas românticas e revelem desejos e sonhos um do outro.</p>
+      </article>
+
+      <article class="card">
+        <h2>4. Cinema em casa</h2>
+        <p>Prepare pipoca, escolham um filme romântico e apaguem as luzes para o clima perfeito.</p>
+      </article>
+
+      <article class="card">
+        <h2>5. Passeio à luz de velas</h2>
+        <p>Se possível, crie um jantar com velas ou um passeio tranquilo com luz suave.</p>
+      </article>
+    </section>
+
+    <section class="game" id="jogos">
+      <h2>Joguinhos Românticos</h2>
+      <div class="game-box">
+        <div class="game-item">
+          <h3>Desafio da Verdade</h3>
+          <p>Escolha um tema e responda com sinceridade. Quem errar faz um carinho especial.</p>
+        </div>
+        <div class="game-item">
+          <h3>Quiz do Amor</h3>
+          <p>Clique no botão e veja quantas perguntas românticas vocês acertam juntos.</p>
+          <button id="quizBtn">Começar quiz</button>
+          <div id="quizResultado" class="resultado"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="surpresa" id="surpresa">
+      <h2>Mensagem Especial</h2>
+      <p id="mensagemSurpresa">Clique em <strong>Mostrar surpresa</strong> para ver uma declaração romântica.</p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

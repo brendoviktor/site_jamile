@@ -1,0 +1,148 @@
+:root {
+  --bg: #1a202c;
+  --surface: #2d3748;
+  --surface-2: #4a5568;
+  --accent: #ff6b81;
+  --accent-soft: #ff9db3;
+  --text: #f7fafc;
+  --muted: #a0aec0;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--text);
+  background: radial-gradient(circle at top, #3b4252 0%, var(--bg) 50%);
+}
+
+.container {
+  width: min(1120px, calc(100% - 2rem));
+  margin: 0 auto;
+  padding: 2rem 0 4rem;
+}
+
+.hero {
+  background: linear-gradient(135deg, rgba(255,107,129,0.2), rgba(255,157,179,0.12));
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 24px;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
+}
+
+.hero h1 {
+  font-size: clamp(2.4rem, 4vw, 4rem);
+  letter-spacing: 0.04em;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  color: var(--muted);
+  line-height: 1.8;
+  margin-bottom: 1.8rem;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  border-radius: 999px;
+  padding: 0.95rem 1.8rem;
+  font-weight: 700;
+  color: var(--bg);
+  background: linear-gradient(135deg, var(--accent), var(--accent-soft));
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 18px 30px rgba(255, 107, 129, 0.28);
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+  margin: 2.5rem 0;
+}
+
+.card {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 22px;
+  padding: 1.6rem;
+  backdrop-filter: blur(12px);
+}
+
+.card h2 {
+  font-size: 1.2rem;
+  margin-bottom: 0.85rem;
+}
+
+.card p {
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.game {
+  margin: 2rem 0;
+}
+
+.game h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.game-box {
+  display: grid;
+  gap: 1.2rem;
+}
+
+.game-item {
+  border-radius: 20px;
+  background: var(--surface);
+  padding: 1.5rem;
+  border: 1px solid rgba(255,255,255,0.06);
+}
+
+.game-item h3 {
+  margin-bottom: 0.75rem;
+}
+
+.resultado {
+  margin-top: 1rem;
+  color: var(--accent-soft);
+  min-height: 2.5rem;
+}
+
+.surpresa {
+  margin-top: 2.5rem;
+  padding: 1.8rem;
+  background: linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0));
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 24px;
+}
+
+.surpresa h2 {
+  margin-bottom: 1rem;
+}
+
+.surpresa p {
+  color: var(--muted);
+  line-height: 1.8;
+}
+
+@media (max-width: 600px) {
+  .hero {
+    padding: 1.5rem;
+  }
+
+  .card, .game-item, .surpresa {
+    padding: 1.25rem;
+  }
+}
